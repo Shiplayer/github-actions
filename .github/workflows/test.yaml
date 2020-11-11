@@ -7,4 +7,9 @@ jobs:
     steps:
       - name: Run
         run: echo "Hello world"
-      
+      - name: Java version
+        continue-on-error: true
+        run: java --version
+      - name: NPM version
+        continue-on-error: true
+        run: npm --version
