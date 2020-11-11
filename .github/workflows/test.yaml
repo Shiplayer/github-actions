@@ -20,6 +20,6 @@ jobs:
         run: python --version
         continue-on-error: true
       - name: Python3
-        run: python3 -- version
+        run: python3 --version
         continue-on-error: true
   
