@@ -13,3 +13,13 @@ jobs:
       - name: NPM version
         continue-on-error: true
         run: npm --version
+      - name: Create file and show dir
+        run: echo test > test.txt && ls -R
+        continue-on-error: true
+      - name: Python
+        run: python --version
+        continue-on-error: true
+      - name: Python3
+        run: python3 -- version
+        continue-on-error: true
+  
