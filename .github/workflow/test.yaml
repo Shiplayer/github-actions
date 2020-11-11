@@ -1,9 +1,0 @@
-name: test
-on: push
-
-jobs:
-  run-job:
-    steps:
-      - name: Run
-      - run: echo "Hello world"
-      
