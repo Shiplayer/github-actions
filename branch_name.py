@@ -8,6 +8,8 @@ def getBranchName(name: AnyStr):
     remove_illegal_file_chars_in_name = ['~', '`', '\'', '"', '!', '%', ';', '']
     illegal_file_char_in_names = [':', '&', '*', '(', ')', '<', '>', '/', '[', ']', '|', '{', '}', '\\', '\t', '\n']
     split_name = name.split('/')
+    if len(split_name) <= 1:
+        return name
     name = split_name[len(split_name) - 2] + ':' + split_name[len(split_name) - 1]
     for illegalChar in remove_illegal_file_chars_in_name:
         name = name.replace(illegalChar, '')
