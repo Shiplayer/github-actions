@@ -28,7 +28,7 @@ jobs:
       - name: Run command
         id: step_branch_name
         run: |
-          output=${python3 branch_name.py ${{ github.ref }}}
+          output=$(python3 branch_name.py ${{ github.ref }})
           echo "::set-output name=branch_name::$output"
   python-job:
     runs-on: ubuntu-latest
